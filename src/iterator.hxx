@@ -1,4 +1,4 @@
-/**
+/**************************************************************************
  *  Copyright (C) 2014  Pierre Marchand <pierremarc07@gmail.com>
  *
  *  This program is free software: you can redistribute it and/or modify
@@ -15,24 +15,19 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  *
- */
+**************************************************************************/
 
-#include "mongo.hxx"
+#ifndef GF_ITERATOR_HXX
+#define GF_ITERATOR_HXX
 
 namespace gf {
-namespace mongo {
 
-std::iterator
-MongoStore::begin() const
+class Iterator
 {
+public:
+    Iterator();
+};
 
-}
-
-std::iterator
-MongoStore::end() const
-{
-
-}
-
-} // namespace mongo
 } // namespace gf
+
+#endif // GF_ITERATOR_HXX
