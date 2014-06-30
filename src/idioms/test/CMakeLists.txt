@@ -1,0 +1,10 @@
+
+INCLUDE_DIRECTORIES(
+${CMAKE_SOURCE_DIR}/src
+)
+
+SET(TEST_SRCS
+test.cpp
+)
+
+ADD_LIBRARY(test_idiom STATIC ${TEST_SRCS})
